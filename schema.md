@@ -73,5 +73,9 @@ Un documento per giornata: registro e chiusura.
 - link + `+asset` → asset invece di compito
 - In vista Oggi un compito senza data prende la data di oggi; dentro un progetto o un'area si collega lì.
 
+## Claude nell'app
+Pannello "Chiedi a Claude" (capability `sample`, sull'account di chi guarda). A ogni messaggio la pagina manda regole, calendario dei prossimi giorni, dati attuali e la chat (ultimi 16 messaggi); la chat resta solo nel browser (`localStorage`, chiave `pda-chat-v1`).
+Strumenti della pagina: `add_task`, `update_task`, `log_activity`, `add_asset`, `add_project`, `update_project`. Nessuno cancella; ogni modifica compare nella chat con **Annulla**.
+
 ## Scorciatoie
-`N` o `Ctrl/Cmd+K` nuovo · `/` vai a · `G` poi `O/P/R/A/S/L` Oggi/Prossimi/pRogetti/Aree/aSset/registro · `J` `K` scorri · `X` fatto · `E` modifica · `C` chiudi la giornata · `Esc` chiudi
+`N` o `Ctrl/Cmd+K` nuovo · `/` vai a · `G` poi `O/P/R/A/S/L` Oggi/Prossimi/pRogetti/Aree/aSset/registro · `J` `K` scorri · `X` fatto · `E` modifica · `C` chiudi la giornata · `I` chiedi a Claude · `Esc` chiudi
